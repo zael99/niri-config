@@ -1,0 +1,27 @@
+[ContentDisplay]
+DirectorySizeMode=ContentSize
+UseShortRelativeDates=false
+
+[DetailsMode]
+ExpandableFolders=false
+PreviewSize=16
+
+[General]
+ConfirmClosingMultipleTabs=false
+DoubleClickViewAction=new_tab
+OpenExternallyCalledFolderInNewTab=true
+RememberOpenedTabs=false
+ShowZoomSlider=true
+SortingChoice=CaseInsensitiveSorting
+Version=202
+ViewPropsTimestamp=2025,12,19,12,16,18.128
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs

@@ -1,0 +1,25 @@
+// ====== Root Niri config ====== //
+
+// Environment Variables
+include "./includes/env.kdl"
+
+// Input/Output
+include "./includes/input.kdl"
+include "./includes/hotkeys.kdl"
+
+// Workspace/Layout
+include "./includes/layout.kdl"
+include "./includes/recent-windows.kdl"
+include "./includes/animations.kdl"
+
+// Window Rules
+include "./includes/rules.kdl"
+
+// Miscellaneous
+include "./includes/misc.kdl"
+
+// System Specific config
+include "./config/config.kdl"
+
+// Colours
+include "./theme/colors.kdl"

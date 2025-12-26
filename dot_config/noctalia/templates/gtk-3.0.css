@@ -1,0 +1,35 @@
+#window {
+    background-color: {{colors.background.default.rgba | set_alpha: 0.85}};
+}
+
+#input {
+    background-color: {{colors.primary_fixed.default.hex}};
+}
+
+#input:focus {
+    color: {{colors.on_primary_fixed.default.hex}};
+}
+
+#text {
+    color: {{colors.on_background.default.hex}};
+}
+
+#entry.activatable #text {
+    color: {{colors.on_primary_fixed.default.hex}};
+}
+
+#entry > * {
+    color: {{colors.on_primary_fixed.default.hex}};
+}
+
+#entry:focus, #entry:selected {
+    background-color: {{colors.primary_fixed.default.hex}};
+}
+
+#entry:focus #text {
+    color: {{colors.on_primary_fixed.default.hex}};
+}
+
+#entry:selected #text {
+    color: {{colors.on_primary_fixed.default.hex}};
+}
