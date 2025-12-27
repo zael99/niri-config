@@ -5,21 +5,16 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+# Environment Variables
+if [ -f ~/.bashenv ]; then
+    . ~/.bashenv
 fi
 
-if ! [[ "$PATH" =~ "$HOME/.cargo/bin:" ]]; then
-    PATH="$HOME/.cargo/bin:$PATH"
+# Aliases
+if [ -f ~/.bashenv ]; then
+    . ~/.bash_aliases
 fi
 
-export PATH
-
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-export QT_QPA_PLATFORMTHEME=qt6ct
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
