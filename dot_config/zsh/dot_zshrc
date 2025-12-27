@@ -1,0 +1,13 @@
+# Define history file location
+export HISTFILE="$ZDOTDIR/.zsh_history"
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+# Optional: Keep the zsh sessions folder clean too (macOS specific)
+export SHELL_SESSION_HISTFILE="$ZDOTDIR/.zsh_sessions"
+
+# Source bash profile
+. ~/.bashrc
+
+# Starship
+eval "$(starship init zsh)"

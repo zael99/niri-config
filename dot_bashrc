@@ -1,8 +1,14 @@
 # .bashrc
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
+# Bash specific setup
+if [ -n "$BASH_VERSION" ]; then
+    if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+    fi
+fi
+
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
 fi
 
 # Environment Variables
