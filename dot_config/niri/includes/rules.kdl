@@ -3,10 +3,9 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 
-    // Open windows in main workspace by default
-    open-on-workspace "main"
     open-focused true
     draw-border-with-background false
+    default-column-display "tabbed"
 }
 
 debug {
@@ -58,37 +57,11 @@ window-rule {
     }
 }
 
-// Windows to go to Misc workspace
-window-rule {
-    match title=r#"^Discord.*$"#
-    match app-id=r#"^Spotify$"#
-    
-    open-on-workspace "misc"
-}
-
-
-// Windows to go to System workspace
-window-rule {
-    match app-id=r#"^kitty$"#
-    match app-id=r#"^org\.kde\..*$"#
-    
-    open-on-workspace "system"
-}
-
 // Windows to go to gaming workspace
 window-rule {
     match app-id=r#"^steam_app_.*$"#
     match app-id=r#"^gamescope$"#
-
-    open-on-workspace "gaming"
+    
     open-fullscreen true
     variable-refresh-rate true
-}
-
-// Windows to go to dev workspace
-window-rule {
-    match app-id=r#"^com.vscodium.codium$"#
-    match app-id=r#"^VSCodium$"#
-
-    open-on-workspace "dev"
 }

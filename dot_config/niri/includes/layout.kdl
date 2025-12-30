@@ -5,7 +5,7 @@ layout {
     gaps 8
 
     default-column-display "tabbed"
-    center-focused-column "never"
+    center-focused-column "on-overflow"
     always-center-single-column
 
     background-color "transparent"
@@ -23,10 +23,12 @@ layout {
     }
     
     tab-indicator {
-        off
+        on
         width 4
         gap 4
-        length total-proportion=1.0
+        gaps-between-tabs 4
+        corner-radius 4
+        length total-proportion=0.95
         position "left"
         hide-when-single-tab
     }
