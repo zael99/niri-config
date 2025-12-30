@@ -35,7 +35,7 @@
         ],
         "outerCorners": false,
         "position": "top",
-        "showCapsule": false,
+        "showCapsule": true,
         "widgets": {
             "center": [
                 {

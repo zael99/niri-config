@@ -18,9 +18,9 @@ layout {
     }
 
     tab-indicator {
-        active-color   "{{colors.primary.default.hex}}aa"
+        active-color   "{{colors.primary.default.hex}}ee"
         inactive-color "{{colors.primary.default.hex}}77"
-        urgent-color   "{{colors.secondary.default.hex}}aa"
+        urgent-color   "{{colors.secondary.default.hex}}ee"
     }
 
     insert-hint {
