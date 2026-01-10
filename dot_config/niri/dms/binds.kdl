@@ -1,0 +1,6 @@
+binds {
+    Ctrl+Space hotkey-overlay-title="App Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    XF86AudioMute hotkey-overlay-title="Volume Mute Toggle" { spawn "dms" "ipc" "call" "audio" "mute"; }
+    Super+b hotkey-overlay-title="Open a Browser: Vivaldi" { spawn "sh" "-c" "flatpak run com.vivaldi.Vivaldi"; }
+}
