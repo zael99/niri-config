@@ -28,7 +28,6 @@ binds {
     // ====== System ====== //
 
     // ====== Programs ====== //
-    Ctrl+Space  hotkey-overlay-title="Open the Application Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Ctrl+Return hotkey-overlay-title="Open a Terminal: Kitty"   { spawn "kitty"; }
     Super+t     hotkey-overlay-title="Open a Terminal: Kitty"   { spawn "kitty"; }
     Super+b     hotkey-overlay-title="Open a Browser: Vivaldi"  { spawn-sh "flatpak run com.vivaldi.Vivaldi"; }

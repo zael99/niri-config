@@ -21,8 +21,6 @@ include "./includes/misc.kdl"
 // System Specific config
 include "./config/config.kdl"
 
-include "./dms/alttab.kdl"
 include "./dms/binds.kdl"
 include "./dms/colors.kdl"
-include "./dms/layout.kdl"
 include "./dms/wpblur.kdl"
