@@ -1,28 +1,28 @@
 # ====== Float Specific Windows ====== #
-windowrulev2 = float, class:^(blueman-manager)$
-#windowrulev2 = move 50% 50%, class:^(blueman-manager)$
+windowrule {
+  name = float-windows
+  match:class = ^(org.quickshell)$
+  match:class = float, class:^(xdg-desktop-portal-gtk|xdg-desktop-portal-kde|xdg-desktop-portal-hyprland)(.*)$
+  match:class = ^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org.org.kde.polkit-kde-authentication-agent-1)(.*)$
+  match:class = ^(org.freedesktop.impl.portal.desktop.kde)$
+  match:class = steam
 
-windowrulev2 = float, class:^(CachyOSHello)$
-#windowrulev2 = move -50% -50%, class:^(CachyOSHello)$
+  float=1
+}
 
-windowrulev2 = float, class:steam
-windowrulev2 = tile, class:steam,title:Steam
-windowrulev2 = float, class:^()$,title:^(Steam - Self Updater)$
-#windowrulev2 = move cursor -50% -50%, class:^()$,title:^(Steam - Self Updater)$
+windowrule {
+  name = tile-steam-main
+  match:class = steam
+  match:title = Steam
 
-windowrulev2 = float, class:^(xdg-desktop-portal-gtk|xdg-desktop-portal-kde|xdg-desktop-portal-hyprland)(.*)$
-#windowrulev2 = move cursor -50% -50%, class:^(xdg-desktop-portal-gtk|xdg-desktop-portal-kde|xdg-desktop-portal-hyprland)(.*)$
+  tile=1
+}
 
-windowrulev2 = float, class:^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org.org.kde.polkit-kde-authentication-agent-1)(.*)$
-#windowrulev2 = move cursor -50% -50%, class:^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org.org.kde.polkit-kde-authentication-agent-1)(.*)$
+windowrule {
+  name = float-steam-updater
+  match:class = ^()$
+  match:title = ^(Steam - Self Updater)$
 
-windowrulev2 = float, class:^(org.freedesktop.impl.portal.desktop.kde)$
-#windowrulev2 = move cursor -50% -50%, class:^(org.freedesktop.impl.portal.desktop.kde)$
+  float=1
+}
 
-# windowrulev2 = move onscreen 50%-w- 50%-h-, floating:1
-
-# HyprBars for floating windows only
-windowrulev2 = plugin:hyprbars:nobar, floating:0
-
-# Open DMS windows as floating by default
-windowrulev2 = float, class:^(org.quickshell)$

@@ -1,8 +1,9 @@
-# Set the Content Type to Game
-windowrulev2 = content game, class:gamescope
+windowrule {
+  name = gamescope
+  match:class = gamescope
+  match:class = ^(steam_app_.*)$
 
-# Move gamescope into special workspace
-windowrulev2 = workspace special:game, class:gamescope
-
-# Give the immediate rule to gamescope
-# windowrulev2 = immediate, class:gamescope
+  content = game
+  workspace = special:game
+  immediate = 1
+}
