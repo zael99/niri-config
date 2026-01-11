@@ -1,9 +1,9 @@
 [config]
 
 [templates.btop]
-input_path = '~/.config/noctalia/templates/btop.theme'
+input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 
 [templates.micro]
-input_path = '~/.config/noctalia/templates/micro.micro'
+input_path = '~/.config/matugen/templates/micro.micro'
 output_path = '~/.config/micro/colorschemes/matugen.micro'
