@@ -1,9 +1,0 @@
-#!/bin/bash
-
-distrobox enter tools -- bash -c '
-  CURRENT=$(gsettings get org.gnome.desktop.a11y.applications screen-keyboard-enabled)
-  if [ "$CURRENT" = "true" ]; then
-    gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled false
-  else
-    gsettings set org.gnome.desktop.a11y.applications screen-keyboard-enabled true
-  fi'

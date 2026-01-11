@@ -1,0 +1,22 @@
+#!/bin/bash
+
+WIDTH=$1
+HEIGHT=$2
+REFRESH=$3
+
+# Define backup location
+BACKUP_FILE="/tmp/hyprland_monitor_layout"
+
+# 1. Save current monitor state to JSON
+hyprctl monitors -j > "$BACKUP_FILE"
+
+# 2. Extract monitor names and disable them
+# We use jq to get all active monitor names and loop through them
+monitor_names=$(jq -r '.[].name' "$BACKUP_FILE")
+
+for mon in $monitor_names; do
+    hyprctl keyword monitor "$mon,disable"
+done
+
+# 3. Create the headless display
+hyprctl output create headless "$(WIDTH)x$(HEIGHT)@$(REFRESH)"

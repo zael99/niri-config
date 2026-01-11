@@ -1,0 +1,8 @@
+# Set the Content Type to Game
+windowrulev2 = content game, class:gamescope
+
+# Move gamescope into special workspace
+windowrulev2 = workspace special:game, class:gamescope
+
+# Give the immediate rule to gamescope
+# windowrulev2 = immediate, class:gamescope
