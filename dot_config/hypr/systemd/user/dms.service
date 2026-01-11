@@ -1,0 +1,24 @@
+[Unit]
+Description=Dank Material Shell (DMS)
+
+PartOf=graphical-session.target
+Requisite=graphical-session.target
+
+After=niri.service
+BindsTo=niri.service
+
+After=hyprland-session.target
+BindsTo=hyprland-session.target
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.Notifications
+ExecStart=/usr/bin/dms run --session
+ExecReload=/usr/bin/pkill -USR1 -x dms
+Restart=on-failure
+RestartSec=1.23
+TimeoutStopSec=10
+
+[Install]
+WantedBy=niri.service
+WantedBy=hyprland-session.target

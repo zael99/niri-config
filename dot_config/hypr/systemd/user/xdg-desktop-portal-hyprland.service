@@ -1,0 +1,15 @@
+[Unit]
+Description=Portal service (Hyprland implementation)
+# This link ensures it dies when you leave Hyprland
+PartOf=hyprland-session.target
+After=hyprland-session.target
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.impl.portal.desktop.hyprland
+# Bazzite's path is usually /usr/libexec or /usr/lib
+ExecStart=/usr/libexec/xdg-desktop-portal-hyprland
+Restart=on-failure
+
+[Install]
+WantedBy=hyprland-session.target

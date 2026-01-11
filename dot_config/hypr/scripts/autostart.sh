@@ -1,10 +1,12 @@
 #!/bin/bash
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=Hyprland
 
-ydotoold &
-syncthing &
+systemctl --user stop hyprland-session.target xdg-desktop-portal xdg-desktop-portal-hyprland
+systemctl --user start hyprland-session.target
+
+#syncthing &
 steam -silent &
 heroic &
-sunshine &
 #sleep 1
 
 #sleep 1
