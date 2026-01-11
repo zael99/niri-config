@@ -1,6 +1,4 @@
 [Unit]
-Description=Hyprland Wayland Session
-Documentation=man:systemd.special(7)
-BindsTo=graphical-session.target
-Wants=graphical-session-pre.target
-After=graphical-session-pre.target
+Description=Hyprland Session Target
+Requires=graphical-session.target
+After=graphical-session.target
