@@ -1,7 +1,0 @@
-# Ignore maximize requests from apps.
-windowrule {
-  name = suppress-maximize
-  match:class = .*
-
-  suppress_event = maximize
-}

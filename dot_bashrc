@@ -21,7 +21,6 @@ if [ -f ~/.bashenv ]; then
     . ~/.bash_aliases
 fi
 
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
     for rc in ~/.bashrc.d/*; do

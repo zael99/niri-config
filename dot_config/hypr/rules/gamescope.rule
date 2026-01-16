@@ -1,9 +1,0 @@
-windowrule {
-  name = gamescope
-  match:class = gamescope
-  match:class = ^(steam_app_.*)$
-
-  content = game
-  workspace = special:game
-  immediate = 1
-}
